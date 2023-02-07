@@ -1,0 +1,334 @@
+:root {
+     --primary-color: rgb(32, 33, 36);
+     --footer-background-color: rgb(23, 23, 23);
+     --button-color: rgb(48, 49, 52);
+     --font-color: white;
+     --font-family: arial, sans-serif;
+     --icon-hover: rgb(47, 48, 52);
+     --icon-path-color: rgb(226, 226, 227);
+     --icon-search: rgb(154, 160, 166);
+     --footer-border: rgb(60, 64, 67);
+     --input-border: rgb(95, 99, 104);
+     --footer-font-color: rgb(137, 160, 152);
+     --buttons-font-color: #e8eaed;
+     --caption-font-color: rgb(189, 193, 198);
+     --hypertext-font-color: #8ab4f8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+body header {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+body header nav {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+body header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+body header nav ul li {
+    margin-right: 14px;
+}
+
+body header nav ul li:nth-child(1) {
+    position: relative;
+    margin-right: 15px;
+    bottom: 2px;
+}
+
+body header nav ul li:nth-child(2) {
+    position: relative;
+    margin-right: 19px;
+    bottom: 2px;
+}
+
+body header nav ul li:nth-child(3) {
+    position: relative;
+    margin-right: 8px;
+    bottom: 1px;
+}
+
+body header nav ul li:nth-child(4) {
+    position: relative;
+    bottom: 1px;
+}
+
+body header nav ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--font-color);
+}
+
+body header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+body header nav ul li a svg {
+    width: 2.4rem;
+    fill: var(--icon-path-color);
+}
+
+.circle, .circle-link {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle:hover {
+    background-color: var(--icon-hover);
+}
+
+a .circle img {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 196px;
+}
+
+main img {
+    width: 272px;
+}
+
+main .input-container {
+    margin: 26px;
+    width: 584px;
+    height: 4.6rem;
+    background-color: transparent;
+    border: 1px solid var(--input-border);
+    border-radius: 4.6rem;
+    display: flex;
+    align-items: center;
+}
+
+main .input-container .lupa {
+    margin-left: 14px;
+    position: relative;
+    top: 1px;
+}
+
+main .input-container .lupa svg {
+    fill: var(--icon-search);
+    width: 2rem;
+    height: 2rem;
+}
+
+main .input-container .lupa svg path {
+    scale: 0.8336;
+}
+
+main .input-container input {
+    background-color: transparent;
+    border: none;
+    width: 443px;
+    height: 3.4rem;
+    margin-left: 13px;
+    caret-color: white;
+}
+
+main .input-container input {
+    outline: none;
+}
+
+main .input-container:hover {
+    border: 1px solid transparent;
+    background-color: var(--button-color);
+}
+
+main .input-container .microphone {
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+main .input-container .camera {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    cursor: pointer;
+}
+
+main .input-container .camera img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+main .input-container .microphone svg {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+main .buttons-container {
+    margin: 3px;
+    width: 313px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .buttons-container button {
+    background-color: var(--button-color);
+    height: 100%;
+    border: none;
+    color: var(--buttons-font-color);
+    font-size: 1.4rem;
+    font-family: var(--font-family);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main .buttons-container button:hover {
+    border: 1px solid var(--input-border);
+}
+
+main .buttons-container button:nth-child(1) {
+    width: 153px;
+}
+
+main .buttons-container button:nth-child(2) {
+    width: 148px;
+}
+
+main > span {
+    margin: 26px;
+    font-size: 1.3rem;
+    color: var(--caption-font-color);
+    margin-right: 29px;
+}
+
+main > span a {
+    text-decoration: none;
+    color: var(--hypertext-font-color)
+}
+
+main > span a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    height: 94px;
+    color: var(--footer-font-color);
+    position: absolute;
+    bottom: 0;
+}
+
+footer .sites-container {
+    width: 100%;
+    height: 50%;
+    background-color: var(--footer-background-color);
+    border-top: 1px solid var(--footer-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .sites-container .sites {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+footer .sites-container .sites ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+}
+
+
+footer .sites-container .sites ul li {
+    margin-right: 30px;
+}
+
+footer .sites-container .sites ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--footer-font-color);
+}
+
+footer .sites-container .sites ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .sites-container .policies {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+footer .sites-container .policies ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+
+footer .sites-container .policies ul li {
+    margin-left: 30px;
+}
+
+footer .sites-container .policies ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--footer-font-color);
+}
+
+footer .sites-container .policies ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .location {
+    width: 100%;
+    height: 50%;
+    background-color: var(--footer-background-color);
+    display: flex;
+    align-items: center;
+}
+
+footer .location span {
+    font-size: 1.5rem;
+    margin-left: 30px;
+    color: rgb(154, 160, 166);
+}

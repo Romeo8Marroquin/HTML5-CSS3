@@ -1,0 +1,13 @@
+p {
+    color: blue;
+    font-size: 40px;
+}
+
+.paragraph {
+    color: red
+}
+
+#paragraph {
+    color: yellow;
+    font-size: 24px;
+}
